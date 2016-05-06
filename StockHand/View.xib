@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearcheView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-hC-cn8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input stocks..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDY-7F-hCu">
+                            <rect key="frame" x="0.0" y="9" width="375" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uj5-xq-utL">
+                    <rect key="frame" x="0.0" y="48" width="125" height="43"/>
+                    <color key="backgroundColor" red="0.74286798119999997" green="1" blue="0.53073448680000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="BackAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="rCw-gL-7hC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-aU-5Ho">
+                    <rect key="frame" x="124" y="48" width="125" height="43"/>
+                    <color key="backgroundColor" red="0.74412348800000006" green="0.35958976710000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Clear"/>
+                    <connections>
+                        <action selector="ClearAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CEv-4x-jYx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tX-3a-gIF">
+                    <rect key="frame" x="248" y="48" width="127" height="43"/>
+                    <color key="backgroundColor" red="0.19532377109999999" green="0.75627367420000002" blue="0.1777753279" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Get Quote"/>
+                    <connections>
+                        <action selector="GetQuoteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="2r2-2q-CgC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textFieldV" destination="cDY-7F-hCu" id="CIU-W5-eJE"/>
+            </connections>
+            <point key="canvasLocation" x="325.5" y="-8.5"/>
+        </view>
+    </objects>
+</document>
